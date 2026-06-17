@@ -1,6 +1,6 @@
 # Property Listing Generator
 
-AI-powered property listing generator built for short-term rental platforms — inspired by Base360.ai's approach to automating property operations.
+AI-powered property listing generator built for short-term rental platforms - inspired by Base360.ai's approach to automating property operations.
 
 ## What It Does
 
@@ -11,7 +11,7 @@ Input property details (type, bedrooms, location, amenities, tone) → AI genera
 | Layer | Technology |
 |-------|-----------|
 | Frontend | React 18 + React Query (useMutation) |
-| Backend | FastAPI (Python) — see `/backend` |
+| Backend | FastAPI (Python) - see `/backend` |
 | AI | OpenAI GPT-4o-mini via API |
 | Styling | Vanilla CSS-in-JS |
 
@@ -27,7 +27,7 @@ ListingResult ◀──JSON──  Structured response  ◀──  GPT-4o-mini
 
 ## Key React Query Concepts
 
-**useMutation** (not useQuery) — because generating a listing is an action triggered by the user, not automatic data fetching:
+**useMutation** (not useQuery) - because generating a listing is an action triggered by the user, not automatic data fetching:
 
 ```js
 const { mutate, isPending, isSuccess, data } = useMutation({
@@ -40,7 +40,7 @@ mutate(propertyData);
 
 ## Running the Project
 
-### Frontend (demo mode — no API key needed)
+### Frontend (demo mode - no API key needed)
 ```bash
 npm install
 npm start
@@ -80,4 +80,4 @@ backend/
 
 ## Why This Project
 
-Built to demonstrate full-stack product thinking — the same approach used in PropTech platforms like The Flex's Base360.ai, where AI automates operational workflows to help property managers scale without increasing headcount.
+Built to demonstrate full-stack product thinking, the same approach used in PropTech platforms like The Flex's Base360.ai, where AI automates operational workflows to help property managers scale without increasing headcount.

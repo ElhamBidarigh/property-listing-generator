@@ -1,13 +1,13 @@
 // src/api/generateListing.js
 // ─────────────────────────────────────────────────────
-// در پروژه واقعی این تابع به FastAPI backend وصل میشه:
+// In the actual project, this function is connected to the FastAPI backend:
 //   const res = await fetch("http://localhost:8000/generate-listing", {
 //     method: "POST",
 //     headers: { "Content-Type": "application/json" },
 //     body: JSON.stringify(propertyData)
 //   });
 //
-// اینجا یه mock شبیه‌سازی می‌کنیم که بدون backend کار کنه
+// Here we simulate a mock that works without a backend
 // ─────────────────────────────────────────────────────
 
 const MOCK_RESPONSES = {
@@ -49,14 +49,14 @@ const MOCK_RESPONSES = {
   },
 };
 
-// شبیه‌سازی API call با delay واقع‌بینانه
+// API call simulation with realistic delay
 export async function generateListing(propertyData) {
-  await new Promise((r) => setTimeout(r, 1800)); // 1.8s مثل یه API call واقعی
+  await new Promise((r) => setTimeout(r, 1800)); // 1.8s is like a real API call
 
   const tone = propertyData.tone || "professional";
   const base = MOCK_RESPONSES[tone] || MOCK_RESPONSES.professional;
 
-  // کمی personalize بر اساس input
+  // Personalize a little based on input
   return {
     ...base,
     title: base.title

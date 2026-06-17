@@ -1,17 +1,17 @@
 // src/hooks/useGenerateListing.js
 // ─────────────────────────────────────────────────────
-// React Query useMutation برای generate listing
+// React Query useMutation to generate listing
 //
-// چرا useMutation به جای useQuery؟
-//  • useQuery   → برای GET / خواندن داده (اجرا میشه موقع mount)
-//  • useMutation → برای POST / ایجاد / action (اجرا میشه وقتی ما بخوایم)
+// Why useMutation instead of useQuery?
+//  • useQuery   → for GET/reading data (can be executed during mount)
+//  • useMutation → For POST / create / action (it can be executed when we want)
 //
-// مفاهیم:
-//  • mutate(data)  → trigger کردن mutation
-//  • isPending     → در حال پردازش
-//  • isSuccess     → موفق
-//  • isError       → خطا
-//  • data          → نتیجه موفق
+// Concepts:
+//  • mutate(data)  → trigger mutation
+//  • isPending     → Processing
+//  • isSuccess     → successful
+//  • isError       → error
+//  • data          → Successful outcome
 // ─────────────────────────────────────────────────────
 
 import { useMutation } from "@tanstack/react-query";

@@ -1,7 +1,7 @@
 // src/App.jsx — Property Listing Generator
 // ─────────────────────────────────────────────────────
 // Stack: React + React Query (useMutation) + OpenAI API (mocked)
-// در پروژه production این به FastAPI backend وصل میشه
+// In the production project, this connects to the FastAPI backend
 // ─────────────────────────────────────────────────────
 
 import PropertyForm   from "./components/PropertyForm";
@@ -9,7 +9,7 @@ import ListingResult  from "./components/ListingResult";
 import { useGenerateListing } from "./hooks/useGenerateListing";
 
 export default function App() {
-  // useMutation — برای trigger کردن API call on demand
+  // useMutation — to trigger an API call on demand
   const { mutate, isPending, isSuccess, isError, data, error } = useGenerateListing();
 
   return (

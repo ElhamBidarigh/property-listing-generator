@@ -1,5 +1,5 @@
 // src/components/PropertyForm.jsx
-// فرم ورودی اطلاعات property
+// Property information input form
 
 const AMENITIES = [
   "Swimming Pool", "Gym", "Parking", "Balcony", "Sea View",

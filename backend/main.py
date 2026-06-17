@@ -2,12 +2,12 @@
 # ─────────────────────────────────────────────────────
 # FastAPI backend برای Property Listing Generator
 #
-# در پروژه واقعی این فایل روی سرور اجرا میشه
-# برای اجرای local:
+# In the real project, this file is executed on the server
+# To run local:
 #   pip install fastapi uvicorn openai python-dotenv
 #   uvicorn main:app --reload
 #
-# ENV variables مورد نیاز:
+# Required ENV variables:
 #   OPENAI_API_KEY=your_key
 # ─────────────────────────────────────────────────────
 
@@ -22,7 +22,7 @@ load_dotenv()
 
 app = FastAPI(title="Property Listing Generator API")
 
-# CORS — اجازه میده React frontend با این API صحبت کنه
+# CORS — It allows the React frontend to talk to this API
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000"],

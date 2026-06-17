@@ -1,5 +1,5 @@
 // src/components/ListingResult.jsx
-// نمایش نتیجه generated listing
+// Display the result of generated listing
 
 import { useState } from "react";
 

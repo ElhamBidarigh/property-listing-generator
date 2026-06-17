@@ -4,7 +4,7 @@ AI-powered property listing generator built for short-term rental platforms - in
 
 ## What It Does
 
-Input property details (type, bedrooms, location, amenities, tone) → AI generates a professional listing with title, description, highlights, and SEO tags — ready to publish on Airbnb, Booking.com, or any CMS.
+Input property details (type, bedrooms, location, amenities, tone) → AI generates a professional listing with title, description, highlights, and SEO tags - ready to publish on Airbnb, Booking.com, or any CMS.
 
 ## Tech Stack
 
